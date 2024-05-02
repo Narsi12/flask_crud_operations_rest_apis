@@ -38,7 +38,7 @@ def get_all_users():
             "phone":emp.phone
         })
     print(result)
-    return jsonify({'message':'fetch data'})
+    return jsonify({'message':'fetch data','data':result})
 
 @app.route('/get_all_users/<int:id>',methods=['GET'])
 def get_single_user(id):
